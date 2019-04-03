@@ -57,11 +57,11 @@ namespace octomap
     // overloaded, so that the return type is correct:
     inline IgTreeNode* getChild(unsigned int i)
     {
-      return static_cast<IgTreeNode*> (::octomap::OcTreeDataNode<float>::getChild(i));
+      return static_cast<IgTreeNode*> (::octomap::OcTreeDataNode<float>::children[i]);
     }
     inline const IgTreeNode* getChild(unsigned int i) const
     {
-      return static_cast<const IgTreeNode*> (::octomap::OcTreeDataNode<float>::getChild(i));
+      return static_cast<const IgTreeNode*> (::octomap::OcTreeDataNode<float>::children[i]);
     }
 
     // -- node occupancy  ----------------------------

@@ -46,7 +46,7 @@ namespace octomap
 
     for (unsigned int k=0; k<8; k++) {
       createChild(k);
-      children[k]->setValue(value);
+      getChild(k)->setValue(value);
     }
   }
   
